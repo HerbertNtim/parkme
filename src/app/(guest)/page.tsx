@@ -36,6 +36,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <h2 className="text-2xl sm:text-4xl  text-slate-500 lg:text-4xl text-center pb-32 tracking-wide">
+        No more running around looking for a parking spot.
+      </h2>
     </main>
   );
 }
