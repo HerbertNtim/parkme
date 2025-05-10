@@ -21,8 +21,8 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <header className='w-full h-20 bg-blue-700'>
-      <div className='container mx-auto flex items-center justify-between h-full'>
+    <header className='w-full bg-blue-600 mx-auto'>
+      <div className='flex items-center justify-between px-8 py-4'>
         <Link href="/" className='text-white text-2xl font-bold sm:ml-0 ml-3'>ParkMe</Link>
         <nav className='hidden lg:flex items-center mr-4'>
           {navItems.map((item) => (
@@ -33,6 +33,7 @@ const Navbar = () => {
         </nav>
         <MobileNavbar />
       </div>
+      <div className='bg-blue-600 w-full h-20' />
     </header>
   )
 }
