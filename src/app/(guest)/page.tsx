@@ -1,11 +1,12 @@
 import Footer from "@/components/Footer";
+import SearchComponent from "@/components/SearchComponent";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="sm:container">
       {/* Search Form */}
-      <h1>Search Form</h1>
+      <SearchComponent />
 
       <h3 className="text-2xl font-bold text-slate-500 lg:text-4xl text-center uppercase py-16 tracking-wide">
         There is always a spot available.
