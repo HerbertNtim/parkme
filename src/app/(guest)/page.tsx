@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="sm:container">
@@ -40,6 +42,22 @@ export default function Home() {
       <h2 className="text-2xl sm:text-4xl  text-slate-500 lg:text-4xl text-center pb-32 tracking-wide">
         No more running around looking for a parking spot.
       </h2>
+
+      {/* Image Section */}
+      <section className="pb-4">
+        <div className="sm:bg-[url(/images/map-bg.png)] pt-16 w-full absolute left-0 bg-cover bg-no-repeat bg-center bg-blue-600 bg-opacity-25 
+        bg-blend-overlay">
+          <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center sm:place-items-start container items-center px-8 pb-16">
+            <div className="flex flex-col items-center text-slate-700">
+              <p className="text-3xl sm:text-4xl font-bold">Fully Responsive</p>
+              <p className="text-md sm:text-lg pt-2 tracking-tight">It feels just like a mobile app.</p>
+            </div>
+            <div>
+              <Image src={'/images/gateless-parking-mobile.png'} alt="mobile picture" width={320} height={400} />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
