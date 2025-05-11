@@ -14,7 +14,7 @@ export default function Home() {
 
       {/* Steps Section */}
       <section className="hidden lg:block pt-16 pb-32">
-        <div className="grid grid-cols-3 place-items center">
+        <div className="grid grid-cols-3 place-items-center">
           {/* Step 1 */}
           <div className="flex flex-col items-center">
             <div className="flex flex-col relative bg-blue-500 text-white rounded-full w-12 h-12 items-center justify-center">

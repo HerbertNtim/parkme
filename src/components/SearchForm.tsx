@@ -57,7 +57,7 @@ const SearchForm = () => {
             <FormItem className='lg:w-[250px] grid'>
               <Label htmlFor='arrivingtime'>Arriving Time</Label>
               <FormControl>
-                <Input {...field} placeholder='time to arrive'/>
+                <Input {...field} type="time" placeholder='time to arrive'/>
               </FormControl>
             </FormItem>
           )}/>
@@ -67,7 +67,7 @@ const SearchForm = () => {
             <FormItem className='lg:w-[250px] grid'>
               <Label htmlFor='leavingtime'>Leaving Time</Label>
               <FormControl>
-                <Input {...field} placeholder='time to leave '/>
+                <Input {...field} type="time" placeholder='time to leave '/>
               </FormControl>
             </FormItem>
           )}/>
