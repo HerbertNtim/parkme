@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Image from "next/image";
 
 export default function Home() {
@@ -52,10 +53,12 @@ export default function Home() {
               <p className="text-3xl sm:text-4xl font-bold">Fully Responsive</p>
               <p className="text-md sm:text-lg pt-2 tracking-tight">It feels just like a mobile app.</p>
             </div>
-            <div>
+            <div className="pt-8">
               <Image src={'/images/gateless-parking-mobile.png'} alt="mobile picture" width={320} height={400} />
             </div>
           </div>
+          {/* Footer */}
+          <Footer />
         </div>
       </section>
     </main>
