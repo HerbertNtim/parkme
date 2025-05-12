@@ -2,6 +2,8 @@
 
 import { Menu } from "lucide-react"
 import { useState } from "react"
+import DesktopSidebar from "./DesktopSidebar"
+import MobileSidebar from "./MobileSidebar"
 
 function SidebarLayout({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false)
@@ -14,8 +16,8 @@ function SidebarLayout({ children }: { children: React.ReactNode }) {
       </div>
 
       <div className="flex h-screen">
-        Desktop
-        Mobile 
+        <DesktopSidebar />
+        <MobileSidebar open={open} setOpen={setOpen } />
         <main className="flex-1 bg-gray-300">
           {children}
         </main>
