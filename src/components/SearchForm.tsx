@@ -73,7 +73,7 @@ const SearchForm = () => {
           )}/>
           
           {/* Submit Button */}
-          <Button type='submit'>Send</Button>
+          <Button type='submit' className='cursor-pointer text-md'>Send</Button>
         </form>          
       </Form>
     </div>
