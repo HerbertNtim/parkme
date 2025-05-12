@@ -1,8 +1,8 @@
+import SidebarLayout from "./_component/SidebarLayout"
+
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>
-      {children}
-    </div>
+    <SidebarLayout>{children}</SidebarLayout>
   )
 }
 
